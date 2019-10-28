@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">Profie: Dulce322228@gmail.com</mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <h1>ToDoA2</h1>
+    <mat-list-item routerLink="/todo/list">List</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item routerLink="/todo/create">Create</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item routerLink="/auth/signup">Sign up</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item (click)="signOut()">Sign out</mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

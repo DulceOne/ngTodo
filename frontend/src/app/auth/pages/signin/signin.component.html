@@ -1,0 +1,12 @@
+<div class="signin">
+  <form [formGroup]="Signin">
+    <mat-form-field>
+      <input matInput placeholder="Uaername" formControlName="username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="signIn()">Login</button>
+  </form>
+</div>

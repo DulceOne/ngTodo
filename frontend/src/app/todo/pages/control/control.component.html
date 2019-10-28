@@ -1,0 +1,7 @@
+<mat-toolbar>
+  <p>Here are the tasks for your list</p>
+</mat-toolbar>
+<form>
+  <ckeditor [editor]="Editor" data="" (ready)="onReady($event)" [(ngModel)]="body" name="body"></ckeditor>
+</form>
+<button mat-raised-button color="primary" (click)="createTask()">Create</button>

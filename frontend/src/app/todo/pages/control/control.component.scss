@@ -1,0 +1,14 @@
+ckeditor::ng-deep {
+  margin-top: 1vw;
+  .ck-editor{
+    margin-top: 1vw;
+    .ck-content {
+      min-height: 25vh;
+    }
+  }
+}
+
+button {
+  margin-top: 1vw;
+  width: 10vw;
+}

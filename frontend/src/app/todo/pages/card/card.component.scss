@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  padding: 1vw 0vw;
+  position: relative;
+
+  .body {
+    width: 85%;
+  }
+
+  .remove {
+    position: absolute;
+    right: 1vw;
+  }
+  .edit {
+    position: absolute;
+    right: 5vw;
+  }
+
+  .date {
+    position: absolute;
+    top: -.2vw;
+    color: rgba(0,0,0,.2);
+    font-size: .7vw;
+  }
+}
