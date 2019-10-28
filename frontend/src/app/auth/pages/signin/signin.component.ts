@@ -8,6 +8,7 @@ import { HttpService }  from '../../../core/services/http.service';
   styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit {
+  public data: {token: string};
 
   public Signin: FormGroup = new FormGroup({
     username: new FormControl('', Validators.required),
@@ -22,7 +23,8 @@ export class SigninComponent implements OnInit {
   signIn() {
     console.log(this.Signin.value)
     this.http.post('/user/signin', this.Signin.value).subscribe(result => {
-      localStorage.setItem('token', result.token);
+      this.data = result as {token};
+      localStorage.setItem('token',this.data.token);
     })
   }
 }
