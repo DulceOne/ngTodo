@@ -1,1 +1,2 @@
 <app-card *ngFor="let item of cards" [card]="item"></app-card>
+<ngb-pagination [collectionSize]="size" [(page)]="page" aria-label="Default pagination" (pageChange)="getCards()"></ngb-pagination>
